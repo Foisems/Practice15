@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="12"
+        android:hint="@string/breed"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="12"
+        android:hint="@string/year"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextBreed"
+        app:layout_constraintStart_toStartOf="@+id/editTextBreed"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBreed" />
+
+    <EditText
+        android:id="@+id/editTextMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="12"
+        android:hint="@string/month"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/editTextYear"
+        app:layout_constraintStart_toStartOf="@+id/editTextYear"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="btnOnClick"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/btn"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMonth"
+        app:layout_constraintStart_toStartOf="@+id/editTextMonth"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMonth" />
+</androidx.constraintlayout.widget.ConstraintLayout>

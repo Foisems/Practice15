@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practice15</string>
+    <string name="breed">Введите породу</string>
+    <string name="year">Введите год рождения</string>
+    <string name="month">Введите месяц рождения</string>
+    <string name="btn">Send data to next activity</string>
+    <string name="toast1">!!Введите породу!!</string>
+    <string name="toast2">!!Введите год рождения!!</string>
+    <string name="toast3">!!Введите месяц рождения!!</string>
+</resources>
